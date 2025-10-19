@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node", "vue"],
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "*.vue": ["src/vue.d.ts"]
+    }
+  },
+  "ts-node": {
+    "esm": true,
+    "transpileOnly": true,
+    "experimentalResolver": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
