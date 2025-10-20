@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "directus start",
-    "dev:staging": "cross-env NODE_ENV=development SERVE_APP=true node --loader ts-node/esm src/nodemon.ts --env staging"
+    "dev:staging": "cross-env NODE_ENV=development SERVE_APP=true node --loader ts-node/esm src/nodemon.ts --env staging",
+    "build:ts": "tsc -p tsconfig.json",
+    "build": "node --loader ts-node/esm scripts/build.ts"
   },
   "keywords": [],
   "author": "",
