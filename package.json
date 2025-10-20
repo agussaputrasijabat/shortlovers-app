@@ -27,6 +27,7 @@
     "@types/node": "^24.8.1",
     "@types/yargs": "^17.0.33",
     "env-cmd": "^11.0.0",
+    "shx": "^0.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
